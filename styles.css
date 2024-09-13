@@ -1,21 +1,19 @@
+/* Apply dark theme styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #f5f5f5; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #007BFF;
-    color: white;
+    background: #2c2c2c; /* Darker background for header */
     padding: 20px;
     text-align: center;
-}
-
-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 nav ul {
@@ -28,32 +26,35 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
+    color: #f39c12; /* Accent color */
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
+    flex: 1; /* Ensures main content takes up available space */
     padding: 20px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: auto;
 }
 
 .profile-img {
-    display: block;
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-    float: left;
-    margin-right: 20px;
+    display: block;
+    margin: 20px auto;
 }
 
 footer {
+    background: #2c2c2c; /* Darker background for footer */
+    color: #f5f5f5;
     text-align: center;
     padding: 10px;
-    background: #007BFF;
-    color: white;
 }
