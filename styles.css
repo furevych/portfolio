@@ -46,10 +46,10 @@ main {
 }
 
 .profile-img {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
-    display: block;
-    margin: 20px auto;
+    display: left;
+    margin: 10px auto;
 }
 
 footer {
