@@ -1,116 +1,83 @@
-/* Global Styling */
+/* General Styles */
 body {
+    background-color: #2b2b2b;
+    color: white;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark theme background */
-    color: #e0e0e0; /* Light text color */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #1e1e1e; /* Dark header background */
-    padding: 20px;
-    text-align: center;
 }
 
 h2 {
-    margin: 0;
-    color: #4caf50; /* New green color for headings */
+    color: white; /* Ensures all h2 headings are white */
+}
+
+a {
+    color: #ffa500; /* Link color remains orange */
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 900px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 1em;
 }
 
-nav a {
-    color: #4caf50; /* Green accent for navigation links */
+nav ul li a {
     text-decoration: none;
+    color: white;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Profile image styling */
-.profile-img {
-    width: 100px;
-    height: auto;
-    float: left;
-    margin-right: 20px;
-}
-
-/* Project section styling */
 .project {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #2c2c2c; /* Slightly lighter background for project blocks */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    background-color: #3a3a3a; /* Subtle hover effect */
+    border: 1px solid #ffa500; /* Thin orange border around project blocks */
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background-color: #444;
 }
 
 .project-img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
+    width: 80px; /* Small project images */
+    height: 80px;
+    margin-right: 1.5em;
 }
 
-.project-details {
-    flex: 1;
+.project-details h3 {
+    margin: 0;
+    color: #ffa500;
 }
 
-.project h3 a {
-    color: #4caf50; /* Green project titles */
-    text-decoration: none;
-}
-
-.project h3 a:hover {
-    text-decoration: underline;
-}
-
-.project p {
-    color: #b0b0b0; /* Lighter color for project descriptions */
-}
-
-/* About section styling */
 .about-content {
     display: flex;
     align-items: center;
 }
 
+.profile-img {
+    width: 80px; /* Small profile image */
+    height: 80px;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
 footer {
-    background-color: #1e1e1e;
     text-align: center;
-    padding: 10px;
-    color: #e0e0e0;
-    position: relative;
-    bottom: 0;
+    background-color: #333;
+    padding: 1em;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
