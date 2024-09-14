@@ -18,7 +18,7 @@ header {
 
 h2 {
     padding: 10px; /* Adds space inside the border of the heading */
-    margin: 10px 0; /* Adds space outside the heading */
+    margin: 20px 0; /* Adds space outside the heading */
     color: #FFFFFF; /* White color for text */
 }
 
@@ -35,12 +35,11 @@ nav ul li {
 
 nav a {
     color: #4caf50; /* Green accent for navigation links */
-    text-decoration: none; /* Remove underline from navigation links */
+    text-decoration: none;
 }
 
 nav a:hover {
-    color: #4caf50; /* Keep green color on hover */
-    text-decoration: none; /* Ensure no underline on hover */
+    text-decoration: none; /* No underline on hover */
 }
 
 main {
@@ -62,6 +61,11 @@ main {
 }
 
 /* Project section styling */
+.project-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit text color from the parent */
+}
+
 .project {
     display: flex;
     align-items: center;
@@ -88,14 +92,18 @@ main {
     flex: 1;
 }
 
+.project h3 {
+    color: #4caf50; /* Green project titles */
+    margin: 0; /* Remove default margin */
+}
+
 .project h3 a {
-    color: #e0e0e0; /* Light text color for project titles */
-    text-decoration: none; /* Remove underline from project titles */
+    text-decoration: none; /* Remove underline from link in heading */
+    color: inherit; /* Inherit color from h3 */
 }
 
 .project h3 a:hover {
-    color: #b0b0b0; /* Slightly lighter color on hover */
-    text-decoration: none; /* Ensure no underline on hover */
+    color: #66bb6a; /* Slightly lighter green on hover */
 }
 
 .project p {
@@ -108,6 +116,7 @@ main {
     align-items: center;
 }
 
+/* Footer styling */
 footer {
     background-color: #1e1e1e;
     text-align: center;
@@ -116,4 +125,15 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Contact link styling */
+#contact a {
+    color: #4caf50; /* Green color for LinkedIn link */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #66bb6a; /* Slightly lighter green on hover */
+    text-decoration: none; /* No underline on hover */
 }
