@@ -115,6 +115,12 @@ footer {
     color: #4caf50; /* Green color for LinkedIn link */
     text-decoration: none; /* Remove underline */
 }
+.profile-img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: to make it circular */
+    margin-right: 20px;
+}
 
 #contact a:hover {
     color: #66bb6a; /* Slightly lighter green on hover */
