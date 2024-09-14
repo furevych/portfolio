@@ -35,7 +35,7 @@ nav ul li {
 
 nav a {
     color: #4caf50; /* Green accent for navigation links */
-    text-decoration: none;
+    text-decoration: underline; /* Ensure navigation links are underlined */
 }
 
 nav a:hover {
@@ -90,7 +90,7 @@ main {
 
 .project h3 a {
     color: #4caf50; /* Green project titles */
-    text-decoration: none;
+    text-decoration: underline; /* Ensure project titles are underlined */
 }
 
 .project h3 a:hover {
