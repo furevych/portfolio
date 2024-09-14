@@ -99,6 +99,14 @@ nav a:hover {
     align-items: center;
 }
 
+/* Profile image styling */
+.profile-img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Square profile image */
+    margin-right: 20px;
+    border-radius: 10px; /* Optional: rounded corners for the profile image */
+}
+
 /* Footer styling */
 footer {
     background-color: #1e1e1e;
@@ -119,9 +127,4 @@ footer {
 #contact a:hover {
     color: #66bb6a; /* Slightly lighter green on hover */
     text-decoration: none; /* Remove underline */
-}
-.profile-img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto;
-    margin-right: 20px;
 }
