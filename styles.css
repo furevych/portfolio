@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: underline;
 }
 
 main {
@@ -54,9 +54,10 @@ main {
 
 /* Profile image styling */
 .profile-img {
-    width: 120px; /* Adjusted size */
-    height: auto;
-    border-radius: 50%; /* Optional: to make it circular */
+    width: 100px;
+    height: 100px; /* Make the height equal to the width */
+    border-radius: 50%; /* Make the image round */
+    float: left;
     margin-right: 20px;
 }
 
@@ -87,18 +88,21 @@ main {
     flex: 1;
 }
 
-.project-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Use the color of the parent element */
+.project h3 {
+    background-color: #4caf50; /* Green background for project titles */
+    color: #FFFFFF; /* White text color for titles */
+    padding: 5px; /* Add padding for better readability */
+    border-radius: 5px; /* Round the corners */
+    margin: 0; /* Remove margin */
 }
 
 .project h3 a {
-    color: #4caf50; /* Green project titles */
+    color: inherit; /* Inherit color from h3 */
     text-decoration: none; /* Remove underline */
 }
 
 .project h3 a:hover {
-    color: #66bb6a; /* Slightly lighter green on hover */
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .project p {
