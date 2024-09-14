@@ -35,11 +35,11 @@ nav ul li {
 
 nav a {
     color: #4caf50; /* Green accent for navigation links */
-    text-decoration: underline; /* Ensure navigation links are underlined */
+    text-decoration: none; /* Remove underline from navigation links */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 main {
@@ -90,11 +90,11 @@ main {
 
 .project h3 a {
     color: #4caf50; /* Green project titles */
-    text-decoration: underline; /* Ensure project titles are underlined */
+    text-decoration: none; /* Remove underline from project titles */
 }
 
 .project h3 a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .project p {
