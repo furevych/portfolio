@@ -17,9 +17,11 @@ header {
 }
 
 h2 {
-    margin: 10px;
-    color: #FFFFFF; /* New green color for headings */
+    padding: 10px; /* Adds space inside the border of the heading */
+    margin: 20px 0; /* Adds space outside the heading */
+    color: #FFFFFF; /* White color for text */
 }
+
 
 nav ul {
     list-style: none;
