@@ -123,6 +123,5 @@ footer {
 .profile-img {
     width: 150px; /* Adjust the width as needed */
     height: auto;
-    border-radius: 50%; /* Optional: to make it circular */
     margin-right: 20px;
 }
