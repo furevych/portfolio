@@ -65,21 +65,20 @@ main {
     align-items: center;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #333; /* Background for the project block */
-    border: 2px solid #f39c12; /* Orange outline */
+    background-color: #282828; /* Slightly lighter background for the project block */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .project:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    background-color: #383838; /* Change background slightly on hover */
 }
 
 .project-img {
     width: 100px; /* Small image for each project */
     height: auto;
-    float: left;
     margin-right: 20px;
 }
 
