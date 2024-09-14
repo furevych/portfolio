@@ -6,11 +6,11 @@ body {
 }
 
 h2 {
-    color: white; /* Ensures all h2 headings are white */
+    color: white; /* All h2 headings remain white */
 }
 
 a {
-    color: #ffa500; /* Link color remains orange */
+    color: #ffa500; /* Link color */
 }
 
 header {
@@ -43,7 +43,7 @@ nav ul li a {
 .project {
     display: flex;
     align-items: center;
-    border: 1px solid #ffa500; /* Thin orange border around project blocks */
+    border: 1px solid #ffa500; /* Thin border around project blocks */
     padding: 1em;
     margin-bottom: 1.5em;
     background-color: #444;
