@@ -45,16 +45,68 @@ main {
     margin: auto;
 }
 
+/* Profile image styling */
 .profile-img {
-    width: 50px; /* Set width to make it small */
-    height: auto; /* Maintain aspect ratio */
-    float: left; /* Align to the left */
-    margin-right: 20px; /* Space between image and text */
+    width: 100px; /* Make the image small */
+    height: auto;
+    float: left; /* Align the image to the left */
+    margin-right: 20px; /* Add space between the image and text */
+}
+
+/* About section styling */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Project section styling */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333; /* Background for the project block */
+    border: 2px solid #f39c12; /* Orange outline */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-img {
+    width: 100px; /* Small image for each project */
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+    color: #f5f5f5;
+}
+
+.project h3 a {
+    color: #f39c12; /* Orange project title */
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    color: #ddd; /* Slightly lighter text for description */
 }
 
 footer {
-    background: #2c2c2c; /* Darker background for footer */
+    background: #2c2c2c;
     color: #f5f5f5;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
