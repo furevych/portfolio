@@ -99,7 +99,7 @@ main {
 
 .project h3 a {
     text-decoration: none; /* Remove underline from link in heading */
-    color: inherit; /* Inherit color from h3 */
+    color: #4caf50; /* Ensure link color matches title color */
 }
 
 .project h3 a:hover {
