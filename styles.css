@@ -39,28 +39,15 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: none; /* Remove underline on hover */
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Profile image styling */
-.profile-img {
-    width: 120px; /* Adjusted size */
-    height: auto;
-    border-radius: 50%; /* Optional: to make it circular */
-    margin-right: 20px;
+    color: #66bb6a; /* Slightly lighter green on hover */
 }
 
 /* Project section styling */
+.project-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color from the parent */
+}
+
 .project {
     display: flex;
     align-items: center;
@@ -87,14 +74,14 @@ main {
     flex: 1;
 }
 
-.project-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Use the color of the parent element */
+.project h3 {
+    color: #4caf50; /* Green project titles */
+    margin: 0; /* Remove default margin */
 }
 
 .project h3 a {
-    color: #4caf50; /* Green project titles */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Remove underline from link in heading */
+    color: inherit; /* Ensure link color matches title color */
 }
 
 .project h3 a:hover {
@@ -103,6 +90,7 @@ main {
 
 .project p {
     color: #b0b0b0; /* Lighter color for project descriptions */
+    margin: 0; /* Remove default margin */
 }
 
 /* About section styling */
@@ -111,6 +99,7 @@ main {
     align-items: center;
 }
 
+/* Footer styling */
 footer {
     background-color: #1e1e1e;
     text-align: center;
@@ -119,4 +108,21 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Contact link styling */
+#contact a {
+    color: #4caf50; /* Green color for LinkedIn link */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact a:hover {
+    color: #66bb6a; /* Slightly lighter green on hover */
+    text-decoration: none; /* Remove underline */
+}
+.profile-img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: to make it circular */
+    margin-right: 20px;
 }
