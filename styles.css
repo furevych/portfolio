@@ -22,7 +22,6 @@ h2 {
     color: #FFFFFF; /* White color for text */
 }
 
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -62,6 +61,12 @@ main {
 }
 
 /* Project section styling */
+.project-link {
+    display: block;
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Ensure text color is inherited from parent */
+}
+
 .project {
     display: flex;
     align-items: center;
@@ -70,7 +75,7 @@ main {
     background-color: #2c2c2c; /* Slightly lighter background for project blocks */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .project:hover {
@@ -86,6 +91,10 @@ main {
 
 .project-details {
     flex: 1;
+}
+
+.project h3 {
+    margin: 0; /* Remove default margin */
 }
 
 .project h3 a {
@@ -107,6 +116,7 @@ main {
     align-items: center;
 }
 
+/* Footer styling */
 footer {
     background-color: #1e1e1e;
     text-align: center;
