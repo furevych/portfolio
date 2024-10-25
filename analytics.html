@@ -25,7 +25,25 @@
             <p><strong>This project involved processing and aggregating a complex dataset using Python (matplotlib, pandas), with a focus on visualizing the balance between incomes and significant expenses like housing costs.</strong></p>
             <p><strong>Flexible functions were created for cleaning, merging, and normalizing data. These functions make it easy to handle current data and integrate future updates.</strong></p>
 
-            <p><strong>Methodology and Calculations:</strong> The project represents proportions of incomes and the most significant expenses. Prices and incomes were taken from actual open datasets and then transformed into a scoring system. Expenses were graded on a 1 to 10 scale, while incomes were graded on a 1 to 100 scale. The prices were normalized for visualization purposes, allowing for comparison across states. All values were related to USD, making it fair to assess which states had higher or lower costs. Equal conditions were applied, and the datasets used came from reputable sources.</p>
+            <p><strong>Methodology and Calculations:</strong></p>
+            <p>This analysis compares incomes and significant expenses by normalizing and visualizing their proportions.</p>
+            <ul>
+                <li><strong>Normalization:</strong> Expenses like housing, medical costs, gas prices, taxes, and the cost of living (CPI) were rounded and normalized to a scale of 1 to 10, where 1 represents the lowest value and 10 the highest. Household incomes were graded from 1 to 100, reflecting their wider range.</li>
+                <li><strong>Grading System:</strong> Normalization converts dollar amounts into scores, making it easier to compare across different expense categories and states.</li>
+                <li><strong>Proportional Representation:</strong> Since all values are in U.S. dollars, it's fair to compare higher or lower costs between states. Though individual income impact isn't considered, the equal grading highlights general affordability.</li>
+                <li><strong>Data Sources:</strong> Data was taken from reliable sources to ensure accuracy.</li>
+            </ul>
+
+            <p><strong>Flexible Functions for Data Aggregation and Future Integration:</strong></p>
+            <p>The code employs a modular approach for handling multiple datasets, ensuring compatibility for future updates and new data sources. Key functionalities are developed for matching, cleaning, and merging data to facilitate seamless analysis and visualization.</p>
+            <ul>
+                <li><strong>State Name Matching:</strong> Standardization of state names is achieved through regex, which removes extra spaces and normalizes case. This ensures accurate matching across different datasets, preventing mismatches due to formatting differences.</li>
+                <li><strong>Data Cleaning:</strong> String values, including percentages and commas, are converted into numeric values, making all expense and income data usable for calculations and visualizations. This process can be applied to future datasets for consistent standardization.</li>
+                <li><strong>Data Loading and Preprocessing:</strong> Specific columns are loaded from CSV files, preparing the data for further processing. This flexibility allows for easy incorporation of new datasets by specifying the file path and relevant columns.</li>
+                <li><strong>Data Aggregation:</strong> Multiple datasets are merged based on the 'State' column, using an approach that includes all states even if some data categories are missing. This design ensures the easy addition of future datasets without disrupting the existing code structure.</li>
+                <li><strong>Main Processing:</strong> The entire workflow is streamlined to load, clean, and merge datasets, allowing for straightforward updates by simply adding new data sources. The merged data is saved for further analysis, making the system adaptable to ongoing data updates.</li>
+                <li><strong>Visualization:</strong> The aggregated data is visualized clearly, comparing normalized expenses against income. This function is designed for flexibility, enabling users to visualize any state's data with minimal input, ensuring adaptability for future visualization needs.</li>
+            </ul>
 
             <div class="experience-block">
                 <h3><a href="https://www.kaggle.com/code/tarasfur/notebooka3000f00a0/" target="_blank">Review the project functional on Kaggle.com</a></h3>
