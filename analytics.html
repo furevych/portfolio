@@ -23,35 +23,35 @@
     <main>
         <section id="experience" class="container">
             <h2>State Financial Overview: Income vs. Major Expenses</h2>
-            <p><strong>Project Purpose: This project analyzes and visualizes the relationship between household incomes and significant expenses across U.S. states. By normalizing and scoring these financial metrics, the analysis aims to provide insights into the economic conditions in different regions, facilitating comparisons that reveal differences in living costs and income levels.</strong></p>
-            <p><strong>This project involved processing and aggregating a complex datasets using Python (matplotlib, pandas), with a focus on visualizing the balance between incomes and significant expenses like housing costs. Flexible functions were created for cleaning, merging, and normalizing data. These functions make it easy to handle current data and integrate future updates.</strong></p>
+            <p><strong>Project Purpose: This project analyzes and visualizes the relationship between household incomes and significant expenses across U.S. states. By normalizing and scoring these financial metrics, the analysis aims to provide insights into the economic conditions in different states, facilitating comparisons that reveal differences in living costs and income levels.</strong></p>
+            <p><strong>The project involved processing and aggregating a complex datasets using Python (matplotlib, pandas), with a focus on visualizing the balance between incomes and significant expenses. Flexible functions were created for cleaning, merging, and normalizing data. These functions make it easy to handle current data and integrate future updates.</strong></p>
 
             <div class="experience-block">
                 <h3>Methodology and Calculations:</h3>
                 <p>This analysis is based on actual values from reputable, publicly available datasets. To facilitate comparison and visualization, some prices levels and values were transformed into scores and ratios.</p>
                 <ul>
-                    <li><strong>Data Transformation:</strong>Real data for household income, housing costs, medical expenses, gas prices, taxes, and cost of living (CPI) were rounded and normalized. Expenses were scored from 1 to 10, while incomes, reflecting a broader range, were scored from 1 to 100. Housing Comparison: Actual prices and their ratios were used to compare incomes and evaluate housing affordability.</li>
+                    <li><strong>Data Transformation:</strong> Real data for household income, housing costs, medical expenses, gas prices, taxes, and cost of living (CPI) were rounded and normalized. Expenses were scored from 1 to 10, while incomes, reflecting a broader range, were scored from 1 to 100. Housing Comparison: Actual prices and their ratios were used to compare incomes and evaluate housing affordability.</li>
                     <li><strong>Grading System:</strong> The normalized scores provide a simplified comparison of how different states rank in terms of income and costs. Higher scores indicate higher values for that category.</li>
                     <li><strong>Proportional Representation:</strong> Since all values originated from actual dollar amounts, the scores effectively represent relative differences in costs and income across states. Equal grading conditions were applied to all states to ensure consistency.</li>
                 
                 <div class="experience-images">
                     <a href="msstts.jpg" data-lightbox="work-set" data-title="Image 1"><img src="msstts.jpg" alt="Methodology Image 1" class="experience-img"></a>
                     <a href="flor.jpg" data-lightbox="work-set" data-title="Image 2"><img src="flor.jpg" alt="Methodology Image 2" class="experience-img"></a>
-                    <a href="msstts.jpg" data-lightbox="work-set" data-title="Image 1"><img src="msstts.jpg" alt="Methodology Image 1" class="experience-img"></a>
-                    <a href="flor.jpg" data-lightbox="work-set" data-title="Image 2"><img src="flor.jpg" alt="Methodology Image 2" class="experience-img"></a>              
+                    <a href="tx.jpg" data-lightbox="work-set" data-title="Image 1"><img src="tx.jpg" alt="Methodology Image 1" class="experience-img"></a>
+                    <a href="ny.jpg" data-lightbox="work-set" data-title="Image 2"><img src="ny.jpg" alt="Methodology Image 2" class="experience-img"></a>              
                 </div>
                     <p>The graphical visualizations provide insights into the proportions between incomes, expenses, and housing affordability.</p>
                     <div class="experience-images">        
                     <a href="top101.jpg" data-lightbox="work-set" data-title="Image 2"><img src="top101.jpg" alt="Methodology Image 2" class="experience-img"></a>
                     <a href="top102.jpg" data-lightbox="work-set" data-title="Image 2"><img src="top102.jpg" alt="Methodology Image 2" class="experience-img"></a>
-                    <a href="top101.jpg" data-lightbox="work-set" data-title="Image 2"><img src="income_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
-                    <a href="top102.jpg" data-lightbox="work-set" data-title="Image 2"><img src="lowncome_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="income_vs_h_costs.jpg" data-lightbox="work-set" data-title="Image 2"><img src="income_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="lowncome_vs_h_costs.jpg" data-lightbox="work-set" data-title="Image 2"><img src="lowncome_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
                 </div>
             </div>
 
             <div class="experience-block">
                 <h3>Flexible Functions for Data Aggregation and Future Integration:</h3>
-                <p>The code employs a modular approach for handling multiple datasets, ensuring compatibility for future updates and new data sources. Key functionalities are developed for matching, cleaning, and merging data to facilitate seamless analysis and visualization.</p>
+                <p>The code is structured with adaptable components to handle various datasets, allowing updates and new data sources to be integrated easily. Key functions ensure data matching, cleaning, and merging for streamlined analysis and visualization.</p>
                 <ul>
                     <li><strong>State Name Matching:</strong> Standardization of state names is achieved through regex, which removes extra spaces and normalizes case. This ensures accurate matching across different datasets, preventing mismatches due to formatting differences.</li>
                     <li><strong>Data Cleaning:</strong> String values, including percentages and commas, are converted into numeric values, making all expense and income data usable for calculations and visualizations. This process can be applied to future datasets for consistent standardization.</li>
