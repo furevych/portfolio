@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience and Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Analytics Projects</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="experience" class="container">
+            <h2>State Financial Overview: Income vs. Major Expenses</h2>
+            <p><strong>Project Purpose: This project analyzes and visualizes the relationship between household incomes and major expenses across U.S. states. By normalizing and scoring these financial metrics, it provides insights into economic conditions, enabling comparisons of living costs and income levels across different states.</strong></p>
+            <p><strong>The project involved processing and aggregating a complex datasets using Python (matplotlib, pandas), with a focus on visualizing the balance between incomes and significant expenses. Flexible functions were created for cleaning, merging, and normalizing data. These functions make it easy to handle current data and integrate future updates.</strong></p>
+
+            <div class="experience-block">
+                <h3>Methodology and Calculations:</h3>
+                <p>This analysis is based on actual values from reputable, publicly available datasets. To facilitate comparison and visualization, some prices levels and values were transformed into scores and ratios.</p>
+                <ul>
+                    <li><strong>Data Transformation:</strong> Real data for household income, housing costs, medical expenses, gas prices, taxes, and cost of living (CPI) were rounded and normalized. Expenses were scored from 1 to 10, while incomes, reflecting a broader range, were scored from 1 to 100. Housing Comparison: Actual prices and their ratios were used to compare incomes and evaluate housing affordability.</li>
+                    <li><strong>Grading System:</strong> The normalized scores provide a simplified comparison of how different states rank in terms of income and costs. Higher scores indicate higher values for that category.</li>
+                    <li><strong>Proportional Representation:</strong> Since all values originated from actual dollar amounts, the scores effectively represent relative differences in costs and income across states. Equal grading conditions were applied to all states to ensure consistency.</li>
+                
+                <div class="experience-images">
+                    <a href="msstts.jpg" data-lightbox="work-set" data-title="Image 1"><img src="msstts.jpg" alt="Methodology Image 1" class="experience-img"></a>
+                    <a href="flor.jpg" data-lightbox="work-set" data-title="Image 2"><img src="flor.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="tx.jpg" data-lightbox="work-set" data-title="Image 1"><img src="tx.jpg" alt="Methodology Image 1" class="experience-img"></a>
+                    <a href="ny.jpg" data-lightbox="work-set" data-title="Image 2"><img src="ny.jpg" alt="Methodology Image 2" class="experience-img"></a>              
+                </div>
+                    <p>The graphical visualizations offer insights into the proportions between incomes, expenses, and housing affordability, with adaptable Python code enabling other various data manipulations. </p>
+                    <div class="experience-images">        
+                    <a href="top101.jpg" data-lightbox="work-set" data-title="Image 2"><img src="top101.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="top102.jpg" data-lightbox="work-set" data-title="Image 2"><img src="top102.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="income_vs_h_costs.jpg" data-lightbox="work-set" data-title="Image 2"><img src="income_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                    <a href="lowncome_vs_h_costs.jpg" data-lightbox="work-set" data-title="Image 2"><img src="lowncome_vs_h_costs.jpg" alt="Methodology Image 2" class="experience-img"></a>
+                </div>
+            </div>
+
+            <div class="experience-block">
+                <h3>Flexible Functions for Data Aggregation and Future Integration:</h3>
+                <p>The code is structured with adaptable components to handle various datasets, allowing updates and new data sources to be integrated easily. Key functions ensure data matching, cleaning, and merging for streamlined analysis and visualization.</p>
+                <ul>
+                    <li><strong>State Name Matching:</strong> Standardization of state names is achieved through regex, which removes extra spaces and normalizes case. This ensures accurate matching across different datasets, preventing mismatches due to formatting differences.</li>
+                    <li><strong>Data Cleaning:</strong> String values, including percentages and commas, are converted into numeric values, making all expense and income data usable for calculations and visualizations. This process can be applied to future datasets for consistent standardization.</li>
+                    <li><strong>Data Loading and Preprocessing:</strong> Selected columns are imported from CSV files, allowing for the addition of new datasets by specifying file paths and columns. The data is merged by the 'State' column, ensuring that all states are included, even if some categories are not present. Large, complex dataset with subcolumns is pre-processed in a separate script and then combined into a unified file.</li>
+                    <li><strong>Main Processing:</strong> The entire workflow is streamlined to load, clean, and merge datasets, allowing for straightforward updates by simply adding new data sources. The merged data is saved for further analysis, making the system adaptable to ongoing data updates.</li>
+                    <li><strong>Visualization:</strong> The aggregated data is visualized clearly, comparing normalized expenses against income. This function is designed for flexibility, enabling to visualize any state's data with minimal input, ensuring adaptability for future visualization needs.</li>
+                </ul>
+                <div class="experience-images">
+                    <a href="process.jpg" data-lightbox="work-set" data-title="Flexible Functions Image 1"><img src="process.jpg" alt="Flexible Functions Image 1" class="experience-img"></a>
+                    <a href="plot.jpg" data-lightbox="work-set" data-title="Flexible Functions Image 2"><img src="plot.jpg" alt="Flexible Functions Image 2" class="experience-img"></a>
+                    <a href="complex_ds.jpg" data-lightbox="work-set" data-title="Flexible Functions Image 2"><img src="complex_ds.jpg" alt="Flexible Functions Image 2" class="experience-img"></a>
+                </div>
+            </div>
+
+            <div class="experience-block">
+                <ul>
+                    <li>Tools: Python (matplotlib, pandas, re), Google Spreadsheets</li>
+                    <li>Sources: U.S. Census Bureau; taxfoundation.org; forbes.com/advisor/</li>
+                    <li>Year: 2024</li>
+                </ul>
+                <h3><a href="https://www.kaggle.com/code/tarasfur/notebooka3000f00a0/" target="_blank">Review the project functional on Kaggle.com</a></h3>
+                <h3><a href="https://github.com/furevych/states_overview_analytics/" target="_blank">Review the code on Github</a></h3>
+                
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p><a href="https://www.linkedin.com/in/taras-furevych" target="_blank">LinkedIn</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taras Furevych</p>
+    </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
