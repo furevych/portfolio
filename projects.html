@@ -1,34 +1,67 @@
-<!-- Lightbox section with clickable link -->
-<a href="https://furevych.github.io/portfolio/analytics.html" target="_blank" class="lightbox-link">
-    <div class="project-images">
-        <a href="msstts.jpg" data-lightbox="financial" data-title="Mississippi">
-            <img src="msstts.jpg" alt="Mississippi" class="experience-img">
-        </a>
-        <a href="ny.jpg" data-lightbox="financial" data-title="New York">
-            <img src="ny.jpg" alt="New York" class="experience-img">
-        </a>
-        <a href="flor.jpg" data-lightbox="financial" data-title="Florida">
-            <img src="flor.jpg" alt="Florida" class="experience-img">
-        </a>
-        <a href="tx.jpg" data-lightbox="financial" data-title="Texas">
-            <img src="tx.jpg" alt="Texas" class="experience-img">
-        </a>
-    </div>
-</a>
-a<!-- Lightbox section with clickable link -->
-<a href="https://furevych.github.io/portfolio/analytics.html" target="_blank" class="lightbox-link">
-    <div class="project-images">
-        <a href="msstts.jpg" data-lightbox="financial" data-title="Mississippi">
-            <img src="msstts.jpg" alt="Mississippi" class="experience-img">
-        </a>
-        <a href="ny.jpg" data-lightbox="financial" data-title="New York">
-            <img src="ny.jpg" alt="New York" class="experience-img">
-        </a>
-        <a href="flor.jpg" data-lightbox="financial" data-title="Florida">
-            <img src="flor.jpg" alt="Florida" class="experience-img">
-        </a>
-        <a href="tx.jpg" data-lightbox="financial" data-title="Texas">
-            <img src="tx.jpg" alt="Texas" class="experience-img">
-        </a>
-    </div>
-</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Taras Furevych</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Taras Furevych</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="resume.docx">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="container">
+            <h2>Data Analytics Projects</h2>
+
+            <!-- Project 1 -->
+            <a href="https://furevych.github.io/portfolio/analytics.html" class="project-link" target="_blank">
+                <div class="project">
+                    <img src="state_financial.jpg" alt="State Financial Overview" class="project-img">
+                    <div class="project-details">
+                        <h3>State Financial Overview: Income vs. Major Expenses</h3>
+                        <p>Interactive visualization comparing median household income and essential living costs across U.S. states. Developed using Python and Tableau. >></p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="air_health.html" class="project-link">
+                <div class="project">
+                    <img src="air_quality.jpg" alt="Air Quality and Health" class="project-img">
+                    <div class="project-details">
+                        <h3>Air Quality and Health Correlation Analysis</h3>
+                        <p>Data analysis exploring relationships between air pollutants (PM2.5, O₃, NO₂) and respiratory illness rates using EPA and CDC datasets. >></p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://fur.pythonanywhere.com/" class="project-link">
+                <div class="project">
+                    <img src="mywebapps.jpg" alt="Return Spot Web App" class="project-img">
+                    <div class="project-details">
+                        <h3>Return Spot Web Application</h3>
+                        <p>Flask-based web app performing stock data analysis including RSI, ATR, and volatility metrics. Hosted on PythonAnywhere. >></p>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Taras Furevych</p>
+    </footer>
+</body>
+</html>
