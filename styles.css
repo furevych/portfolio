@@ -2,59 +2,60 @@
 :root {
     --bg-main: #0f0f0f;
     --bg-card: #1a1a1a;
-    --bg-hover: #222222;
+    --bg-hover: #252525;
     --text-main: #e0e0e0;
     --text-muted: #b0b0b0;
     --accent: #4caf50;
     --accent-hover: #81c784;
-    
-    /* Font Scale for Readability */
-    --font-size-nav: 1.3rem;
-    --font-size-h2: 2.4rem;
-    --font-size-h3: 1.7rem;
-    --font-size-p: 1.2rem;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.7;
+    line-height: 1.7; /* Increased for better readability */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* LEFT-ALIGNED Container */
+/* Container to keep content consistent */
 .container {
-    max-width: 1100px;
-    margin: 0 40px; /* Aligns to the left with a small margin */
-    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-/* Header & Left-Aligned Nav */
+/* Header & Navigation */
 header {
-    background-color: #1a1a1a;
-    padding: 3rem 0;
+    background-color: rgba(30, 30, 30, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 2rem 0; /* More padding for a premium feel */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     border-bottom: 1px solid #333;
 }
 
 header .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Forces name and nav to the left */
+    align-items: center;
     gap: 1.5rem;
 }
 
 h2 {
-    font-size: var(--font-size-h2);
-    color: #FFFFFF;
-    margin: 2.5rem 0;
+    font-size: 2.2rem; /* Scaled up */
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0;
+    color: #fff;
     padding-left: 15px;
-    border-left: 5px solid var(--accent);
-    text-align: left;
+    border-left: 5px solid var(--accent); /* Added a left-border accent */
 }
 
 nav ul {
@@ -62,95 +63,152 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 3rem; /* Space between links */
+    justify-content: center;
+    gap: 3rem; /* Increased gap */
 }
 
 nav a {
     color: var(--accent);
     text-decoration: none;
-    font-size: var(--font-size-nav);
     font-weight: 700;
-    transition: 0.3s;
+    font-size: 1.3rem; /* Fixed the small text here */
+    transition: var(--transition);
+    position: relative;
+    padding: 5px 10px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--accent-hover);
+    transition: var(--transition);
 }
 
 nav a:hover {
-    color: #fff;
+    color: var(--accent-hover);
 }
 
-/* Project Cards - Left Aligned */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Project & Experience Blocks */
 .project-link {
     text-decoration: none;
     color: inherit;
     display: block;
-    margin-bottom: 2rem;
 }
 
-.project {
+.project, .experience-block {
     display: flex;
-    align-items: flex-start; /* Aligns content to top-left */
-    background-color: var(--bg-card);
+    align-items: center;
+    margin: 0 0 2rem 0;
     padding: 2rem;
-    border-radius: 12px;
+    background-color: var(--bg-card);
     border: 1px solid #333;
-    transition: 0.3s;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
-.project:hover {
+.experience-block {
+    border: 1px solid var(--accent);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project:hover, .experience-block:hover {
+    transform: translateY(-8px);
     background-color: var(--bg-hover);
     border-color: var(--accent);
 }
 
 .project-img {
-    width: 130px;
-    height: 130px;
+    width: 120px; /* Scaled up */
+    height: 120px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-right: 2.5rem; /* Pushes text to the right of image */
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.project-details {
+    flex: 1;
 }
 
 .project h3 {
-    font-size: var(--font-size-h3);
     color: var(--accent);
-    margin: 0 0 10px 0;
+    font-size: 1.6rem; /* Scaled up */
+    margin: 0 0 0.5rem 0;
 }
 
 .project p {
-    font-size: var(--font-size-p);
     color: var(--text-muted);
+    font-size: 1.15rem; /* Scaled up */
 }
 
-/* About Me - Left Aligned */
+/* About Section */
 .about-content {
     display: flex;
-    align-items: flex-start;
-    gap: 2.5rem;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    background-color: var(--bg-card);
+    border-radius: 14px;
+    border: 1px solid #333;
 }
 
 .profile-img {
-    width: 180px;
+    width: 180px; /* Scaled up */
     height: 180px;
     object-fit: cover;
-    border-radius: 12px;
-    border: 1px solid #444;
+    border-radius: 16px;
+    border: 2px solid #444;
+    margin-right: 2.5rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+}
+
+/* Contact & Footer */
+#contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: var(--transition);
 }
 
 footer {
-    padding: 3rem 40px;
-    text-align: left; /* Aligns copyright to the left */
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 3rem;
     color: var(--text-muted);
-    border-top: 1px solid #222;
     margin-top: auto;
+    font-size: 1.1rem;
+    border-top: 1px solid #222;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .container {
-        margin: 0 20px;
-    }
     .project, .about-content {
         flex-direction: column;
+        text-align: center;
     }
+
     .project-img, .profile-img {
+        margin-right: 0;
         margin-bottom: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
     }
 }
