@@ -4,7 +4,7 @@
     --bg-card: #1a1a1a;
     --bg-hover: #252525;
     --text-main: #e0e0e0;
-    --text-muted: #b0b0b0;
+    --text-muted: #a0a0a0;
     --accent: #4caf50;
     --accent-hover: #81c784;
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
@@ -17,72 +17,63 @@ body {
     padding: 0;
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.7; /* Increased for better readability */
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Container to keep content consistent */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
 /* Header & Navigation */
 header {
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(30, 30, 30, 0.8);
     backdrop-filter: blur(10px);
-    padding: 2rem 0; /* More padding for a premium feel */
+    padding: 1.5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #333;
 }
 
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+/* Container for non-centered alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h2 {
-    font-size: 2.2rem; /* Scaled up */
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     color: #fff;
     padding-left: 15px;
-    border-left: 5px solid var(--accent); /* Added a left-border accent */
 }
 
+/* FIXED: Larger Nav Text */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
     display: flex;
-    justify-content: center;
-    gap: 3rem; /* Increased gap */
+    justify-content: flex-start; /* Keeps it left-aligned like your original preference */
+    gap: 3rem;
 }
 
 nav a {
     color: var(--accent);
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.3rem; /* Fixed the small text here */
+    font-size: 1.3rem; /* Increased from 0.95rem */
     transition: var(--transition);
     position: relative;
-    padding: 5px 10px;
 }
 
 nav a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 3px;
-    bottom: -2px;
+    height: 2px;
+    bottom: -4px;
     left: 0;
     background-color: var(--accent-hover);
     transition: var(--transition);
@@ -100,17 +91,16 @@ nav a:hover::after {
 .project-link {
     text-decoration: none;
     color: inherit;
-    display: block;
 }
 
 .project, .experience-block {
     display: flex;
     align-items: center;
-    margin: 0 0 2rem 0;
-    padding: 2rem;
+    margin: 0 1rem 1.5rem 1rem;
+    padding: 1.5rem;
     background-color: var(--bg-card);
     border: 1px solid #333;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
@@ -128,11 +118,11 @@ nav a:hover::after {
 }
 
 .project-img {
-    width: 120px; /* Scaled up */
-    height: 120px;
+    width: 100px; /* Slightly larger image for the demo overview */
+    height: 100px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-right: 2rem;
+    border-radius: 8px;
+    margin-right: 1.5rem;
 }
 
 .project-details {
@@ -141,62 +131,56 @@ nav a:hover::after {
 
 .project h3 {
     color: var(--accent);
-    font-size: 1.6rem; /* Scaled up */
-    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .project p {
     color: var(--text-muted);
-    font-size: 1.15rem; /* Scaled up */
+    font-size: 1.1rem;
 }
 
 /* About Section */
 .about-content {
     display: flex;
     align-items: center;
-    padding: 2.5rem 2rem;
-    background-color: var(--bg-card);
-    border-radius: 14px;
-    border: 1px solid #333;
+    padding: 2rem 1rem;
+    max-width: 1000px;
 }
 
 .profile-img {
-    width: 180px; /* Scaled up */
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 16px;
-    border: 2px solid #444;
-    margin-right: 2.5rem;
-}
-
-.about-content p {
-    font-size: 1.2rem;
+    border: 2px solid #333;
+    margin-right: 2rem;
 }
 
 /* Contact & Footer */
 #contact a {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     transition: var(--transition);
 }
 
 footer {
     background-color: #0a0a0a;
-    text-align: center;
-    padding: 3rem;
+    text-align: left; /* Back to left alignment */
+    padding: 2rem 40px;
     color: var(--text-muted);
     margin-top: auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-top: 1px solid #222;
 }
 
-/* Responsive Adjustments */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
     .project, .about-content {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .project-img, .profile-img {
@@ -206,9 +190,5 @@ footer {
 
     nav ul {
         gap: 1.5rem;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
     }
 }
