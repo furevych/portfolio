@@ -42,7 +42,16 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #333;
 }
-
+nav a {
+    color: #4caf50; /* Your signature green accent */
+    text-decoration: none;
+    font-size: 1.4rem; /* Significantly larger text */
+    font-weight: 700; /* Bold for better contrast against dark background */
+    padding: 12px 24px; /* Makes the link itself larger and easier to click */
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,15 +61,6 @@ nav ul {
     gap: 3.5rem; /* Spacious gap for Portfolio/Resume links */
 }
 
-nav a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: var(--font-size-nav);
-    padding: 12px 20px;
-    border-radius: 8px;
-    transition: var(--transition);
-}
 
 nav a:hover {
     color: #fff;
