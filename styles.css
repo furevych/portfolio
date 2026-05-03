@@ -34,13 +34,6 @@ header {
     border-bottom: 1px solid #333;
 }
 
-/* Container for non-centered alignment */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 h2 {
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -49,21 +42,20 @@ h2 {
     padding-left: 15px;
 }
 
-/* FIXED: Larger Nav Text */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
-    justify-content: flex-start; /* Keeps it left-aligned like your original preference */
-    gap: 3rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav a {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.3rem; /* Increased from 0.95rem */
+    font-weight: 600;
+    font-size: 0.95rem;
     transition: var(--transition);
     position: relative;
 }
@@ -72,7 +64,7 @@ nav a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 12px;
     bottom: -4px;
     left: 0;
     background-color: var(--accent-hover);
@@ -118,8 +110,8 @@ nav a:hover::after {
 }
 
 .project-img {
-    width: 100px; /* Slightly larger image for the demo overview */
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 1.5rem;
@@ -131,13 +123,13 @@ nav a:hover::after {
 
 .project h3 {
     color: var(--accent);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
 .project p {
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 /* About Section */
@@ -145,16 +137,39 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     padding: 2rem 1rem;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 16px;
     border: 2px solid #333;
     margin-right: 2rem;
+}
+
+/* Image Grids */
+.experience-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.experience-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(20%);
+    transition: var(--transition);
+}
+
+.experience-images img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 /* Contact & Footer */
@@ -162,25 +177,29 @@ nav a:hover::after {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2rem;
     transition: var(--transition);
+}
+
+#contact a:hover {
+    color: var(--accent-hover);
+    text-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
 }
 
 footer {
     background-color: #0a0a0a;
-    text-align: left; /* Back to left alignment */
-    padding: 2rem 40px;
+    text-align: center;
+    padding: 2rem;
     color: var(--text-muted);
     margin-top: auto;
-    font-size: 1rem;
+    font-size: 0.85rem;
     border-top: 1px solid #222;
 }
 
-/* Mobile Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .project, .about-content {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .project-img, .profile-img {
@@ -189,6 +208,7 @@ footer {
     }
 
     nav ul {
-        gap: 1.5rem;
+        gap: 1rem;
+        font-size: 0.85rem;
     }
 }
